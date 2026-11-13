@@ -17,7 +17,7 @@ function App() {
   const { user, signOut } = useAuthenticator();
 
   function createTodo() {
-    client.models.Todo.create({ content: window.prompt("Todo content") });
+    client.models.Todo.create({ content: window.prompt("Todo content"), tags: "personlig" });
   }
 
   function deleteTodo(id: string) {
